@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" placeholder="Enter the number1">
+    <br>
+    <input id="num2" type="number" placeholder="Enter the number2">
+     
+     <button id="Submitbutton">=</button>
+     <button id="add" onclick="add()">+</button>
+     <button id="sub" onclick="subt()">-</button>
+     <button id="prod" onclick="prod()">*</button>
+     <button id="div" onclick="div()">/</button>
+     <p id="result">Result is</p>
+     
+
+
+
+   <script>
+  function add(){
+    let num1=parseFloat(document.getElementById("num1").value);
+    let num2=parseFloat(document.getElementById("num2").value);
+    document.getElementById("result").innerText="Result:" +(num1+num2);
+  }
+  function subt(){
+    let num1=parseFloat(document.getElementById("num1").value);
+    let num2=parseFloat(document.getElementById("num2").value);
+    document.getElementById("result").innerText="Result:" +(num1-num2); 
+  }
+  function prod(){
+    let num1=parseFloat(document.getElementById("num1").value);
+    let num2=parseFloat(document.getElementById("num2").value);
+    document.getElementById("result").innerText="Result:" +(num1*num2); 
+  }
+  function div(){
+    let num1=parseFloat(document.getElementById("num1").value);
+    let num2=parseFloat(document.getElementById("num2").value);
+    if (num2==0){
+        document.getElementById("result").innerText="Cannot be divisible by 0";
+    }else{
+    document.getElementById("result").innerText="Result:" +(num1/num2); 
+    }  
+}
+
+  
+  
+   </script> 
+</body>
+</html>

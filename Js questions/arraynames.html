@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="names" type="text" placeholder="Enter the names">
+    <button id="Submitbutton" onclick="array()">Submit</button>
+    <p id="result"></p>
+    
+    <script>
+      function array(){
+       let names=document.getElementById("names").value;
+       let namesArray=names.split(',');
+       let resultText="names in the array:";
+       for (let i=0; i<namesArray.length; i++){
+        resultText+=namesArray[i];
+        if(i!=namesArray.length-1){
+            resultText+=",";
+        }
+    }
+       document.getElementById("result").innerText=resultText;
+       
+}
+        </script>
+    
+</body>
+</html>
+

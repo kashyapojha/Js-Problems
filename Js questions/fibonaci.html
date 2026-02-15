@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="number" type="number" placeholder="Enter the number of terms">
+    <button id="Submitbutton" onclick="fibonaci()"></button>Submit</button>
+    <p id="result"></p>
+<script>
+    function fibonaci(){
+    let num2 = 1;
+    let result = "Fibonacci Series: " + num1 + ", " + num2;
+    let nextNum;
+
+    while (num1 + num2 <= limit) {
+        nextNum = num1 + num2;
+        result += ", " + nextNum;
+        num1 = num2;
+        num2 = nextNum;
+    }
+
+    return result;
+}
+
+// Example: Generate Fibonacci series up to a limit of 100
+let fibonacciResult = fibonacci(100);
+console.log(fibonacci); // Output the Fibonacci series up to 100
+    }
+}
+</script>
+
+</body>
+</html>

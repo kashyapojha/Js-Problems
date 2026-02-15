@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+     <input id="num1" type="number" placeholder="Enter the temp">
+     <button id="Submitbutton" onclick="celsiusToFahrenheit()">celsiusToFahrenheit</button>
+     <button id="Submitbutton" onclick="fahrenheitToCelsius()">fahrenheitToCelsius</button>
+     <p id="result"></p>
+
+    <script>
+        function celsiusToFahrenheit(celsius) {
+  return (celsius * 9/5) + 32;
+  document.getElementById('result').value = result.toFixed(2) + "°F";
+}
+
+// Fahrenheit to Celsius
+function fahrenheitToCelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5/9;
+  document.getElementById('result').value = result.toFixed(2) + "°C";
+}
+
+        
+    </script>
+</body>
+</html>

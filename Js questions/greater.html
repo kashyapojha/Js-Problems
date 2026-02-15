@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       
+    <input id="num1" type="number" placeholder="Enter first number">
+    <input id="num2" type="number" placeholder="Enter the second number">
+    <button id="Submitbutton" onclick="greater()">Submit</button> 
+    <p id="result">Greater number is</p>
+    
+
+
+    <script>
+      function greater(){
+        let num1=parseFloat(document.getElementById("num1").value);
+        let num2=parseFloat(document.getElementById("num2").value);
+        if (num1>num2){
+            document.getElementById("result").innerText="Num 1 is greater than num2";
+        }else if(num1<num2){
+            document.getElementById("result").innerText="Num2 is greater than num1"
+        }else{
+            document.getElementById("result").innerText="Both numbers are equal";
+        }
+        }
+    </script>
+</body>
+</html>

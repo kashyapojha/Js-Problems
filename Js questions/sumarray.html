@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input id="num" type="number" placeholder="Enter the numbers">
+     <button id="Submitbutton" onclick="array()">Submit</button>
+     <p id="result"></p>
+
+    <script>
+     function array(){
+        let numbers=document.getElementById("num").value.split(' ').map(Number);
+        let sum=0;
+        for(let i=0;i<numbers.length;i++){
+            sum+=numbers[i];
+        } 
+        document.getElementById("result").innerText="Sum of numbers of array is"+sum;
+     }
+    
+     
+    </script>
+</body>
+</html>
+<script>
+  
